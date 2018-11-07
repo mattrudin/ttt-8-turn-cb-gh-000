@@ -38,6 +38,7 @@ def turn(board)
   user_index = gets.strip
   index = input_to_index(user_index)
   if valid_move?(board, index)
+    move(index)
   else
     puts "Not a valid move"
     user_index = gets.strip
