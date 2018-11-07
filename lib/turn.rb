@@ -40,6 +40,6 @@ def turn(board)
   if valid_move?(board, index)
   else
     puts "Not a valid move"
-    return false
+    user_index = gets.strip
   end
 end
