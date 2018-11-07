@@ -21,3 +21,13 @@ def position_taken?(board, index)
     return true
   end
 end
+
+def input_to_index(user_input)
+  user_index = user_input.to_i
+  index = user_index - 1
+  return index
+end
+
+def move(board_array, user_index, character = 'X')
+  return board_array[user_index] = character
+end
