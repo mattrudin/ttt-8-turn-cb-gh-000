@@ -28,6 +28,6 @@ def input_to_index(user_input)
   return index
 end
 
-def move(board_array, user_index, character = 'X')
-  return board_array[user_index] = character
+def move(board, index, character = 'X')
+  return board[index] = character
 end
